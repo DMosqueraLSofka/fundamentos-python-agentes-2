@@ -93,18 +93,19 @@ Mi estrategia es **fallback con mensaje** — si la API externa falla, el endpoi
 
 ## 📁 Estructura del proyecto
 
+```bash
 Reto/
-├── agente.py          # Clases PseudoAgente y AgenteAdmin (dominio)
-├── db.py              # Funciones SQLite (persistencia)
-├── config.py          # Variables de entorno (configuración)
-├── main.py            # Servidor FastAPI — 12 endpoints, logging, auth
-├── cliente.py         # Demo end-to-end: 5 agentes, 7 misiones, 8 mensajes
-├── .env               # Secretos (NO versionado)
-├── .env.example       # Plantilla de secretos (versionado)
-├── .gitignore         # Excluye .env, agentes.db, __pycache__
-├── requirements.txt   # fastapi, uvicorn, requests, python-dotenv
-├── PASO_A_PASO.md     # Guía de pruebas paso a paso
-└── README.md          # Este archivo
+├── agente.py        # Clases PseudoAgente y AgenteAdmin (dominio)
+├── db.py            # Funciones SQLite (persistencia)
+├── config.py        # Variables de entorno (configuración)
+├── main.py          # Servidor FastAPI — 12 endpoints, logging, auth
+├── cliente.py       # Demo end-to-end
+├── .env             # Secretos (NO versionado)
+├── .env.example     # Plantilla de secretos
+├── .gitignore       # Excluye .env, agentes.db, __pycache__
+├── requirements.txt # fastapi, uvicorn, requests, python-dotenv
+└── README.md        # Este archivo
+```
 
 ## 📊 Datos semilla (generados por cliente.py)
 
